@@ -76,7 +76,6 @@ export class Canvas {
     x: number = 0,
     y: number = 0
   ) {
-    console.log(".,.,scale is called.,", scale);
     this.clearCanvas();
     this.clearData();
     this._x = Math.abs(x - width / 2);

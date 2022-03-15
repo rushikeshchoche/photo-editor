@@ -24,11 +24,13 @@ const AppView = () => {
           <input type="range" id="resize" min="4" max="10" value="10" disabled>
         </div>
         <div>
-          <label for="jsonExport" class="file-select">Export JSON</label>
-          <input type="button" id="jsonExport" disabled/>
-        </div>
           <label for="jsonImport" class="file-select">Upload an JSON file</label>
           <input type="file" id="jsonImport" accept=".json"/>
+        </div>
+        <div>
+          <label for="jsonExport" class="file-export">Submit</label>
+          <input type="button" id="jsonExport" disabled/>
+        </div>
       </form>
       <canvas id="editorCanvas" class="canvas"></canvas>
     </div>
