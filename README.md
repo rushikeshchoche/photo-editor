@@ -4,7 +4,7 @@ This repository contains Photo editor TypeScript project.
 
 ### Goal
 
-Thi application covers below two scenarios:
+This application covers below two scenarios:
 
 ##### Scenario 1.
 
