@@ -1,0 +1,94 @@
+body {
+  font-family: Helvetica, Verdana, sans-serif;
+  line-height: 1.5em;
+  height: 100%;
+  box-sizing: border-box;
+  background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(200,200,200,1) 80%);
+}
+
+#imageContainer,
+#debugContainer {
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.column {
+  width: 48%;
+  margin: .5%;
+  border: 1px solid #000;
+  vertical-align: top;
+
+  &.left {
+    float: left;
+  }
+  &.right {
+    float: right;
+  }
+}
+
+#imageContainer {
+  img {
+    width: 100%;
+  }
+}
+
+#debugContainer {
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+
+  h1 {
+    text-align: center;
+    color: #F4633A;
+    margin-bottom: 1em;
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image-formats {
+      font-size: small;
+    }
+
+    .file-select {
+      border: 1px solid #F4633A;
+      display: inline-block;
+      padding: 6px 12px;
+      cursor: pointer;
+      background-color: #FFFFFF;
+      border-radius: 12px;
+    }
+
+    input[type="file"] {
+      display: none;
+    }
+    
+    input[type="button"]{
+      display: none;
+    }
+  }
+
+  .canvas {
+    margin-top: 1em;
+    border: 5px solid darkgray;
+    flex: 1;
+    background-color: #FFFFFF;
+  }
+}
